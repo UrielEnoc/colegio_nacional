@@ -1,0 +1,45 @@
+/* espacio hacia abajo */
+
+.espacio-abajo-10{
+    padding-bottom: 10px;
+}
+.espacio-abajo-20{
+    padding-bottom: 20px;
+}
+.espacio-abajo-30{
+    padding-bottom: 30px;
+}
+.espacio-abajo-40{
+    padding-bottom: 40px;
+}
+.espacio-abajo-50{
+    padding-bottom: 50px;
+}
+.espacio-abajo-60{
+    padding-bottom: 60px;
+}
+
+/* espacio hacia la derecha */
+
+.espacio-derecho-5{
+    padding-right: 5px;
+}
+.espacio-derecho-10{
+    padding-right: 10px;
+}
+.espacio-derecho-15{
+    padding-right: 15px;
+}
+.espacio-derecho-20{
+    padding-right: 20px;
+}
+.espacio-derecho-30{
+    padding-right: 30px;
+}
+.espacio-derecho-40{
+    padding-right: 40px;
+}
+.espacio-derecho-50{
+    padding-right: 60px;
+}
+
