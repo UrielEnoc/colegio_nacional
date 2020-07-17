@@ -2,13 +2,9 @@
 
 namespace App;
 
-
-use Carbon\Carbon;
 use Freshwork\ChileanBundle\Rut;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Facades\Date;
 
 class User extends Authenticatable
 {
@@ -41,20 +37,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $created_at = [
-        'created_at',
-    ];
-
-    public function getCreatedAtAttribute($created_at) {
-        return Carbon::createFromFormat('Y-m-d H:i:s', $created_at)->format('d-m-Y');
-    }
-
-
     public function validarRut() {
         Rut::parse('11111111-1')->validate(); //true
 
@@ -69,10 +51,6 @@ class User extends Authenticatable
             return false;
         }
     }
-
-
-
 }
-
 
 
